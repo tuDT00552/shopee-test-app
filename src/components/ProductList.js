@@ -8,7 +8,7 @@ export default function ProductList() {
         xhr.addEventListener('load', () => {
             setProducts(JSON.parse(xhr.response).items)
         })
-        xhr.open("GET", "search_items/?by=relevancy&limit=100&match_id=" + ShopID + "&newest=" + 0 + "&order=desc&page_type=collection&version=2")
+        xhr.open("GET", "http://localhost:5000/search_items/?by=relevancy&limit=100&match_id=" + ShopID + "&newest=" + 0 + "&order=desc&page_type=collection&version=2")
         xhr.send()
     }, []);
 
