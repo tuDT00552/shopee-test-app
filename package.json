@@ -1,4 +1,5 @@
 {
+  "proxy": "https://shopee.vn/api/v2/",
   "name": "shopee-sale",
   "version": "0.1.0",
   "private": true,
